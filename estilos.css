@@ -1,0 +1,55 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4faff;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #004080;
+}
+
+.malla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ramo {
+  background-color: #e6f7ff;
+  border-left: 6px solid #007acc;
+  padding: 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.ramo.locked {
+  opacity: 0.5;
+  pointer-events: none;
+  background-color: #f2f2f2;
+  border-color: #999;
+}
+
+.ramo.approved {
+  background-color: #d4f4d7;
+  border-color: #33aa33;
+}
+
+.ramo h3 {
+  margin-top: 0;
+  color: #004080;
+}
+
+.ramo small {
+  display: block;
+  margin-top: 10px;
+  color: #666;
+  font-size: 0.9em;
+}
